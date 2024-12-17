@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> project kp </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" defer></script>
+
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Electra</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Electra</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">HALAMAN</a></li>
+          <li>
+            <a href="#">KATEGORI</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="sensormodul.html">SENSOR/MODUL</a></li>
+              <li><a href="cctv.html">CCTV</a></li>
+              <li><a href="aksesories.html">AKSESORIS</a></li>
+              <li><a href="kabel.html">KABEL</a></li>
+              <li class="more">
+                <span><a href="#">LAINNYA</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Jasa instalasi Cctv Wirelless</a></li>
+                  <li><a href="#">Jasa Instalasi Cctv Kabel</a></li>
+                  <li><a href="#">Jasa Instalasi LED</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">MERK</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">HIKVISION</a></li>
+              <li><a href="#">HILOOK</a></li>
+              <li><a href="#">DAHUA</a></li>
+              <li><a href="#">IMOU</a></li>
+              <li><a href="#">RUIJIE</a></li>
+            </ul>
+          </li>
+          <li><a href="#tentang">TENTANG</a></li>
+          <li><a href="#product">PRODUCT</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input class="form-control mr-sm-2" type="search" placeholder="Cari product..." id="search-bar" aria-label="Search" oninput="debouncedSearch()">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<br>
+
+<i id="product"></i>
+<br> 
+<div class="container my-5">
+  <div class="row" id="product-list">
+    <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+      <div class="card shadow border-light rounded">
+        <img src="img.product/rg59 dahua.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG59 Dahua DH_PFM9411 300m">
+        <div class="card-body p-3">
+          <h6 class="card-title text-center">RG59 Dahua 300m</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 725.000</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG59 Dahua DH_PFM9411 300m" data-price="725000">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+      <div class="card shadow border-light rounded">
+        <img src="img.product/rg6 dahua.jpg" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG6 Dahua DH_PFM941 300m">
+        <div class="card-body p-3">
+          <h6 class="card-title text-center">RG6 Dahua 300m</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 750.000</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG6 Dahua DH_PFM941 300m" data-price="750000">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+      <div class="card shadow border-light rounded">
+        <img src="img.product/rg6 infinity.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG6+2 infinity 300m">
+        <div class="card-body p-3">
+          <h6 class="card-title text-center">RG6+2 infinity 300m</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 900.000</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG6+2 infinity 300m" data-price="900000">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+      <div class="card shadow border-light rounded">
+        <img src="img.product/RG59 infinity.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG59+2 Infinity 300m">
+        <div class="card-body p-3">
+          <h6 class="card-title text-center">RG59+2 Infinity 300m</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 850.000</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG59+2 Infinity 300m" data-price="850000">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+      <div class="card shadow border-light rounded">
+        <img src="img.product/rg59 robot.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG59+2 Robot 300m">
+        <div class="card-body p-3">
+          <h6 class="card-title text-center">RG59+2 Robot 300m</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 790.000</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG59+2 Robot 300m" data-price="790000">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+      <div class="card shadow border-light rounded">
+        <img src="img.product/rg59 globe 50m.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG59+2 50m Globe">
+        <div class="card-body p-3">
+          <h6 class="card-title text-center">RG59+2 50m Globe</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 165.000</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG59+2 50m Globe" data-price="165000">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+    <div class="card shadow border-light rounded">
+      <img src="img.product/rg6 robot.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG6+2 Robot 300m">
+      <div class="card-body p-3">
+        <h6 class="card-title text-center">RG6+2 Robot 300m</h6>
+        <p class="card-text text-center text-dark fw-bold">Rp 900.000</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG6+2 Robot 300m" data-price="900000">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+    <div class="card shadow border-light rounded">
+      <img src="img.product/rg6 globe.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG6+2 Globe Cam 100m">
+      <div class="card-body p-3">
+        <h6 class="card-title text-center">RG6+2 Globe 100m</h6>
+        <p class="card-text text-center text-dark fw-bold">Rp 300.000</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG6+2 Globe Cam 100m" data-price="300000">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+    <div class="card shadow border-light rounded">
+      <img src="img.product/rg59 interluc.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG59+2 100m Interluc">
+      <div class="card-body p-3">
+        <h6 class="card-title text-center">RG59+2 100m Interluc</h6>
+        <p class="card-text text-center text-dark fw-bold">Rp 275.000</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG59+2 100m Interluc" data-price="275000">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+    <div class="card shadow border-light rounded">
+      <img src="img.product/rg59 interluc 300m.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="RG59+2 300m Interluc">
+      <div class="card-body p-3">
+        <h6 class="card-title text-center">RG59+2 300m Interluc</h6>
+        <p class="card-text text-center text-dark fw-bold">Rp 645.000</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="https://wa.me/your_whatsapp_number" class="btn btn-success btn-sm">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="btn btn-info btn-sm add-to-cart" data-name="RG59+2 300m Interluc" data-price="645000">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  
+      
+<div></div> 
+                 
+<!-- Keranjang Floating -->
+<div id="cart-icon">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cart-count">0</span>
+</div>
+
+<!-- Modal Daftar Belanja -->
+<div id="cart-modal">
+  <div class="modal-content">
+    <h3>List Pesanan </h3>
+    <ul id="cart-list"></ul>
+    <br>
+    <p id="total-price">Total: Rp 0</p>
+    <div class="modal-buttons">
+      <button id="send-whatsapp" class="btn btn-success">Kirim ke WhatsApp</button>
+      <button id="close-modal" class="btn btn-danger">Tutup</button>
+    </div>
+  </div>
+</div>
+
+
+      
+  
+      
+      <!-- Additional Products (sequentially added) -->
+ 
+  
+    <!-- Message when no products match the search -->
+    <div id="no-results-message" class="alert alert-warning" style="display: none;  padding: 10px 20px; margin-top: 40px; ;">
+      maaf barang yang di cari belum tersedia.
+  </div>
+  
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

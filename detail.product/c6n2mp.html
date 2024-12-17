@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C6N Camera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .product-info img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .details {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .details h2 {
+            font-size: 22px;
+            color: #444;
+        }
+
+        .details ul {
+            list-style-type: none;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .details ul li {
+            margin-bottom: 12px;
+        }
+
+        .details ul li strong {
+            color: #e74c3c;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .product-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .price {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>C6N Camera</h1>
+        <div class="product-info">
+            <img src="img.product/c6n 2mp.png" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;" alt="C6N 2MP">
+            <div class="details">
+                <h2>Fitur Utama</h2>
+                <ul>
+                    <li><strong>Resolusi HD 1080p</strong> - Rekam gambar dan video berkualitas tinggi.</li>
+                    <li><strong>Mode Malam</strong> - Pemantauan yang jelas dalam cahaya rendah.</li>
+                    <li><strong>Deteksi Gerakan</strong> - Peringatan otomatis jika ada gerakan terdeteksi.</li>
+                    <li><strong>Audio Dua Arah</strong> - Komunikasi dua arah melalui kamera.</li>
+                    <li><strong>Instalasi Mudah</strong> - Mudah diatur melalui aplikasi mobile.</li>
+                </ul>
+                <h2>Spesifikasi</h2>
+                <ul>
+                    <li>Resolusi: 1080p</li>
+                    <li>Wi-Fi: 2.4 GHz</li>
+                    <li>Sudut Pandang: 120°</li>
+                    <li>Dimensi: 9.8 x 9.8 x 13 cm</li>
+                    <li>Berat: 200g</li>
+                </ul>
+                <div class="price">Rp 799.000,-</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
